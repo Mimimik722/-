@@ -1,0 +1,331 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    background: blanchedalmond;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0;
+}
+
+nav a{
+    margin: 0px;
+    height: 50px;
+}
+
+.nav-profile{
+    margin: 0;
+    margin-right: 20px;
+    width: 200px;
+    text-align: right;
+}
+
+nav h1{
+    margin-bottom: 0;
+    font-size: 21px;
+    margin-left: 10px;
+    width: 200px;
+    font-weight: 1000;
+    line-height: 0;
+}
+
+main{
+    min-height: calc(100vh - 80px);
+}
+
+footer{
+    height: 95px;
+    width: 100%;
+    padding-top: 5px;
+    background-color: darkslategray;
+    color: white;
+}
+
+.btn-registration{
+    padding: 5px 10px;
+    text-decoration: none;
+    color: aliceblue;
+    background: blueviolet;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#shadow{
+    display: none;
+    background: rgba(102, 102, 102, .5);
+    top: 55px;
+    left: 0;
+    margin: 0;
+}
+
+#shadow::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#shadow:target{
+    display: block;
+}
+
+.nav-panel{
+    margin: 0;
+    width: 200px;
+    background-color: rgb(189, 100, 36);
+    height: 100%;
+}
+
+.nav-panel ul li{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+}
+
+.label{
+    position: relative; 
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label::before{
+    content: "";
+    background-image: url('../images/label.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
+
+.label-text{
+    text-align: center;
+    position: relative;
+}
+
+.label-text h1{
+    padding-bottom: 50px;
+}
+
+.terms{
+    position: relative; 
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terms::before{
+    content: "";
+    background-image: url('../images/terms.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
+
+.terms-text{
+    text-align: center;
+    position: relative;
+}
+
+.terms-text h1{
+    padding-bottom: 20px;
+}
+
+.terms-text p{
+    padding-bottom: 10px;
+}
+
+.terms-text a{
+    color: black;
+    padding: 5px 10px;
+    background-color: rgb(184, 123, 241);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.classes{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.classes p{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.student{
+    padding: 10px 5px;
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.join{
+    display: flex;
+    padding-top: 5px;
+}
+
+.student input{
+    margin: 0;
+    border-width: 1px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.student a{
+    margin: 0;
+    margin-left: 5px;
+    color: white;
+    padding: 5px 10px;
+    background-color: #2f72dc;
+    border-radius: 5px;
+}
+
+.teacher{
+    padding: 10px 5px;
+    width: 250px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.create{
+    display: flex;
+    padding-top: 5px;
+}
+
+.teacher a{
+    margin: 0;
+    color: white;
+    padding: 5px 10px;
+    background-color: #2f72dc;
+    border-radius: 5px;
+}
+
+footer p{
+    margin: 0;
+    padding: 0 5px;
+}
+
+footer hr{
+    margin: 0;
+}
+
+footer a{
+    padding: 5px 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.label-terms{
+    margin: 100px 0;
+    height: 100%;
+    text-align: center;
+}
+
+.search-form{
+    padding-top: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-form input{
+    height: 30px;
+    width: 250px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.search-form a{
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.label-terms img{
+    width: 30px;
+}
+
+form a img{
+    width: 35px;
+}
+
+form{
+    min-width: 250px;
+}
+
+form input{
+    margin-top: 5px;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+form p{
+    margin-bottom: 0px;
+}
+
+form div{
+    display: flex;
+    justify-content: center;
+}
+
+#registration{
+    margin-top: 250px;
+    display: none;
+}
+
+#login{
+    margin-top: 250px;
+    display: none;
+}
+
+#login:target{
+    display: block;
+}
+
+#registration:target{
+    display: block;
+}
